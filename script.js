@@ -1,7 +1,3 @@
-let w = document.getElementById("w");
-
-function handleClick(){
-    alert("W got clicked!");
+for (let i = 0; i<document.querySelectorAll(".drum").length;i++){
+    document.querySelectorAll(".drum")[i].addEventListener("click", function(){alert("I got clicked!")});
 }
-
-w.addEventListener("click", handleClick);
