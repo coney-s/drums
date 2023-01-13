@@ -17,30 +17,44 @@ body {
   }
   
   .w {
+
+    background-image: url('resources/images/crash.png');
   
   }
   
   .a {
+
+    background-image: url('resources/images/tom1.png');
   
   }
   
   .s {
+
+    background-image: url('resources/images/tom2.png');
   
   }
   
   .d {
+
+    background-image: url('resources/images/snare.png');
   
   }
   
   .j {
+
+    background-image: url('resources/images/tom3.png');
   
   }
   
   .k {
+
+    background-image: url('resources/images/tom4.png');
   
   }
   
   .l {
+
+    background-image: url('resources/images/kick.png');
   
   }
   
