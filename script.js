@@ -1,16 +1,18 @@
 
 for (let i = 0; i<document.querySelectorAll(".drum").length;i++){
-    let audio = new Audio('resources/sounds/tom-1.mp3');
+ 
    document.querySelectorAll(".drum")[i].addEventListener("click", function() {
     
     let buttonInnerHTML = this.innerHTML;
     makeSound(buttonInnerHTML);
+    buttonAnimation(buttonInnerHTML);
 
  })};
 
 
     document.addEventListener("keydown", function(event){
         makeSound(event.key);
+        buttonAnimation(event.key);
     });
    
 
@@ -61,3 +63,12 @@ for (let i = 0; i<document.querySelectorAll(".drum").length;i++){
 
     }
 
+function buttonAnimation(currentKey) {
+
+    let activeButton = document.querySelector("." + currentKey);
+    activeButton.classList.add("pressed");
+    setTimeout(function() {
+        activeButton.classList.remove("pressed")
+    }, 100);
+    
+}
